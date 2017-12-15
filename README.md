@@ -34,7 +34,16 @@
  - Keras
     - Tensforflow, Pytorch, Theano 등을 편하게 사용할 수 있게 위한 Framework
 
+## Configuration
+Pycharm Run/Debug Configuration
 
+| Name | Environment Variables  | 설명 |
+|--|--|--|
+| 0. init-configuration | mode=init-environment | Environment reset |
+| 1. crawl | mode=crawl | Crawl stock data from yahoo finance |
+| 2. import-to-db | mode=import-to-db | put above csv data to postgre database |
+| 3. generate-features | mode=generate-features | using data make features for analysis |
+| 4. learn-and-predict  | mode=learn-and-predict | train and predict |
 
 
 
