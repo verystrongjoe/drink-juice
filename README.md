@@ -7,17 +7,17 @@
 요즘 금융 분석은 컴퓨팅 파워도 올라가고 딥/머신러닝의 기술 발달과 인터넷에서 제공하는 다양한 데이터를 가지고 딥러닝/머신러닝 기술도 익히면서 쉽게 가공된 데이터를 쉽게 API를 이용하여 수집처리가 가능한 시대가 도래했습니다. 퀀트 전문가들이 수학과 통계 기술이 금융계에서 쓰여지면서 활황을 누렸으나 2008년도에 서브프라임등이 터지면서 소강상태였으나 요즘 다시 최근에 혁신을 일으키고 있다고합니다. IT기술을 접목하여 좀 더 관리하면 더 좋을 것 같습니다. 저도 그래서 머신러닝과 데이터 마이닝 기술이 엄청 발전하고 있고 재테크나 은퇴 준비등을 위해서  개인 스스로에게도 도움이 될 것 같습니다.
 
 
-## Pre-requsities
+## Pre-requsities Knowledge 
 
-파이선 공부 필요
+1. Python 3.x 
  - 점프 투 파이선 온라인 위키북을 보는 걸 추천
- - 가상환경 구축
-   http://pythoninreal.blogspot.kr/2013/12/virtualenv.html
+ - [가상환경 구축](http://pythoninreal.blogspot.kr/2013/12/virtualenv.html)
 
-
+2. Installation for python library 
 앞으로 소개할 개발 환경을 셋업하기 위해서는 아래 목록의 프로그램/라이브러리 설치가 필요합니다.
 
  - 파이선 3.6
+ - Pycharm Community Edition
  - 파이선 라이브러리
     - [FlaskRESTful](https://flask-restful.readthedocs.io/en/latest/)
     - [BeuatifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
@@ -46,9 +46,6 @@ Pycharm Run/Debug Configuration
 | 4. learn-and-predict  | mode=learn-and-predict | train and predict |
 
 
-
-## Day 1
-
 ### Goal
    1. 주가 예측을 위한 개발 환경 구축에 대한 내용을 위주로 하고자 합니다.
    2. 시간이 허락한다면 머신러닝을 이용한 주가 예측을 간단하게 해보겠습니다.
@@ -59,7 +56,6 @@ Pycharm Run/Debug Configuration
 뭘 만들것이냐.. 아래와 같이 생겼습니다.
 회색부분은 아직 모듈을 붙이진 않았고, 현재 프로젝트에 구현된 부분은 하얀색
 ![](assets/README-c4789.png)
-
 
 1. 환경 구축에 사용한 모듈/라이브러리에 대한 설명 with 간단한 예제
 
@@ -102,17 +98,12 @@ Pycharm Run/Debug Configuration
 |dow_l| day / 100 | 요일(normalize) |
 |moy_l| month / 100 | 월(normalize) |
 
-
-## Day 2
-
-저번에 4번 이후 5번 이어서 나갑니다.
-5. 케라스/텐서플로우등을 이용하여 모델 training
+5. Using features, model train using keras, tensorflow
 
 
 ##### 모델
-
- 1. sklearn
- 2. keras (using TF as a backend)
+1. sklearn
+2. keras (using TF as a backend)
 
  1) learn_predict_kerasnn
     파라메터 : tkr, yrs, mnth, features, hl, neurons
@@ -145,12 +136,11 @@ Pycharm Run/Debug Configuration
     b) 모델 생성
     동일하게 keras를 사용하여 히든레이어 영역없이 동일
 
-
 6. 모델 또한 binary RDB 저장/재사용
 7. flaskRESTful을 이용하여 REST API를 사용하여 가격 정보를 제공하는 웹서비스 구축sklearn과 keras(with tensorflow as a backend)를 사용하여 NN과 linear regression등의 모델을 사용하여 미래 주식 가격 예측
 
 
-## Day 3
+## Schedule
 
 여러가지를 생각중이나,
 
@@ -159,9 +149,6 @@ Pycharm Run/Debug Configuration
 
 2. 현재 깃헙의 올라온 소스를 기반으로 DQN을 사용한 강화학습을 통한 주가 sell out 시기 예측하는 것을 돌려보고 있는데 Keras 2.x대의 버그(?) 문제로 계속 trouble shooting중에 있어서 고치든 다른 것으로 우회를 해서 돌려볼 예정.
 
-
-
-## 향후계획
 1. 액면분할이나 배당 요소도 고려 필요
 2. 현재는 뉴럴넷과 Linear Regression 정도 돌려봤으나 강화학습 또한 포함할 예정
 
