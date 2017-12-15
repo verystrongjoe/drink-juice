@@ -106,9 +106,6 @@ Pycharm Run/Debug Configuration
 ## Day 2
 
 저번에 4번 이후 5번 이어서 나갑니다.
-
-
-
 5. 케라스/텐서플로우등을 이용하여 모델 training
 
 
@@ -176,7 +173,7 @@ https://github.com/verystrongjoe/tkrapi20
 https://www.quantinsti.com/blog/machine-learning-trading-predict-stock-prices-regression/
 http://spy611.herokuapp.com/
 http://reg4.herokuapp.com/
-d1d2.us
+http://d1d2.us
 
 2. Reinforcement learning
 [페북 공유된 강화학습 사례](https://www.facebook.com/groups/TensorFlowKR/permalink/525157697825293/)
@@ -206,7 +203,6 @@ http://www.learndatasci.com/sentiment-analysis-reddit-headlines-pythons-nltk/
 [Quant Platform](https://www.quantopian.com/)
 
 [프로그래머를 위한 통계 강의( 파이콘 2016, 미국 )](https://www.youtube.com/watch?v=CRnnarKkm9Y)
-
 
 https://github.com/llSourcell/Stock_Market_Prediction
 
