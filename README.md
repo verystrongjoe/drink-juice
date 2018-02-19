@@ -35,6 +35,33 @@
     - Tensforflow, Pytorch, Theano 등을 편하게 사용할 수 있게 위한 Framework
 
 ## Configuration
+1.  config.py를 프로젝트 루트에 아래와 같이 작성해야 합니다. 이 파일은 .gitignore파일에 포함되어 형상에 올라오지 않습니다.
+```
+# config.py
+APP_CONFIG = {
+    'HOME' : 'D:\\dev\\workspace\\juice-project',
+    'HTTP_PROXY' : 'http://70.10.15.10:8080',
+    'HTTPS_PROXY' : 'http://70.10.15.10:8080'
+}
+
+DATABASE_CONFIG = {
+    'host': '127.0.0.1',
+    'name': 'tkrapi',
+    'user': 'tkrapi',
+    'password': 'tkrapi',
+    'init-script' : '\\init\\db\\create-table.sql'
+}
+
+CRAWL_CONFIG = {
+    'ticker_list_file' : '\\data\\input\\tkrlist.txt',
+    'ticker_output_csv_path'  : '\\data\\raw\\tkrcsv',
+    'ticker_output_html_path'  : '\\data\\raw\\tkrhtml',
+    'start_date' : '20100101',
+    'end_date' : '20171028',
+    'ticker' : '',
+}
+```
+
 Pycharm Run/Debug Configuration
 
 | Name | Environment Variables  | 설명 |
