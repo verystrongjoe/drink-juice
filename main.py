@@ -8,7 +8,10 @@ yahoo = cralwer.CrawlYahooTkr()
 
 def crawl(tkr='') :
 
+
+
     '''
+    ddd
     Crawling function using yahoo finance api
     https://finance.yahoo.com/quote/IBM/
     It runs parallely to maximize usage of every cpu core
