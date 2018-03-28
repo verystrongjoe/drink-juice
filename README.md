@@ -28,6 +28,7 @@
     - Pandas
     - SQLAlchemy ( 이건 별도로 pip install을 이용하지 않고 msi나 source를 직접 받아 build)
         . http://pythoncentral.io/how-to-install-sqlalchemy/
+        . 공식사이트에서 소스를 다운로드 받고 python setup.py install 으로 바로 실행 가능.
  - Postgre Database
  - Tensorflow
     - 구글, 머신러닝 위한 프레임워크

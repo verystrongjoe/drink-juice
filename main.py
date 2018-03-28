@@ -4,14 +4,14 @@ import sys
 import config
 from multiprocessing import Process, Pool
 import core.crawl.yahoo as cralwer
-yahoo = cralwer.CrawlYahooTkr()
+import core.persist.pg as pg
+
+
 
 def crawl(tkr='') :
-
-
+    yahoo = cralwer.CrawlYahooTkr()
 
     '''
-    ddd
     Crawling function using yahoo finance api
     https://finance.yahoo.com/quote/IBM/
     It runs parallely to maximize usage of every cpu core
@@ -50,14 +50,16 @@ if __name__ == "__main__":
 
     home = os.environ.get('HOME', None);
 
-    if(home is None) :
-        config.APP_CONFIG['HOME'] = os.path.dirname(sys.modules['__main__'].__file__)
-    else :
-        config.APP_CONFIG['HOME'] = os.environ['HOME']
+    # if(home is None) :
+    #     config.APP_CONFIG['HOME'] = os.path.dirname(sys.modules['__main__'].__file__)
+    # else :
+    #     config.APP_CONFIG['HOME'] = os.environ['HOME']
 
     logging.debug('root project path : %s', config.APP_CONFIG['HOME'])
 
     mode = os.environ.get('mode', None)
+
+    mode = 'init-environment'
 
     if not mode:
        raise ValueError('You must have "mode" variable')
@@ -65,8 +67,6 @@ if __name__ == "__main__":
     logging.debug('mode : %s', mode)
     if mode == 'init-environment' :
         logging.debug('initialize environment ')
-
-        import core.persist.pg as pg
 
         # setup db connection
         db = pg.PostgreDB()

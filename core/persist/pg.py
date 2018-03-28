@@ -1,5 +1,5 @@
 import os
-from sqlalchemy import create_engine
+from sqlalchemy  import create_engine
 import config
 import logging
 
@@ -14,7 +14,8 @@ class PostgreDB :
         db_user = config.DATABASE_CONFIG['user']
         db_pwd = config.DATABASE_CONFIG['password']
         db_name = config.DATABASE_CONFIG['name']
-        db_url = 'postgres://' + db_user + ":" + db_pwd + "@" + db_host +"/" + db_name
+        #db_url = 'postgres://' + db_user + ":" + db_pwd + "@" + db_host +"/" + db_name
+        db_url = 'mysql://' + db_user + ":" + db_pwd + "@" + db_host + "/" + db_name
 
         self._db_url = db_url
         self._db_connection = create_engine(self._db_url).connect()
@@ -36,9 +37,17 @@ class PostgreDB :
 
     def script_execution(self, file_name):
         with open(file_name, 'r') as f :
-            sql_script = f.read()
-            self.get_conn().execute(sql_script)
-        f.closed
+            sqlScript = []
+            sqlScript = f.read()
+            for statement in sqlScript.split(';'):
+                self.get_conn().execute(statement)
+                # with self.get_conn().cursor() as cur:
+                #     cur.execute(statement)
+
+        # with open(file_name, 'r') as f :
+        #     sql_script = f.read()
+        #     self.get_conn().execute(sql_script)
+        #f.closed
 
 # db = PostgreDB()
 # db.script_execution('D:\dev\workspace\juice-project\init\db\create-table.sql')

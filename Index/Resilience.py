@@ -6,7 +6,7 @@ import datetime, time
 from prettytable import PrettyTable
 import logging
 
-from domain import Stock
+from Domain import Stock
 
 ## resilience 주식의 회복 탄력성을 계산해주는 로직
 class Resilience :
