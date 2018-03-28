@@ -204,6 +204,23 @@ http://www.learndatasci.com/sentiment-analysis-reddit-headlines-pythons-nltk/
 [여기](https://www.youtube.com/watch?v=JuLCL3wCEAk)
 
 5. 강화학습을 가지고 주식가격 예측 관련 논문
+
+5.2.
+
+[Reinforcement Learning For Automated Trading](http://www1.mate.polimi.it/~forma/Didattica/ProgettiPacs/BrambillaNecchi15-16/PACS_Report_Pierpaolo_Necchi.pdf)
+
+[STOCK MARKET FORECASTING USING RECURRENT NEURAL NETWORK](https://mospace.umsystem.edu/xmlui/bitstream/handle/10355/56058/research.pdf?sequence=2&isAllowed=y)
+
+[Portfolio Management using Reinforcement Learning](http://cs229.stanford.edu/proj2016/report/JinElSaawy-PortfolioManagementusingReinforcementLearning-report.pdf)
+
+[An Investigation into the Use of
+Reinforcement Learning Techniques
+within the Algorithmic Trading Domain](https://www.doc.ic.ac.uk/teaching/distinguished-projects/2015/j.cumming.pdf)
+
+
+
+5.1. 
+ 
 [Reinforcement Learning in Online Stock Trading Systems](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.83.5299&rep=rep1&type=pdf)
 
 [Stock Trading with Recurrent Reinforcement Learning (RRL)](http://cs229.stanford.edu/proj2006/Molina-StockTradingWithRecurrentReinforcementLearning.pdf)
@@ -212,9 +229,15 @@ http://www.learndatasci.com/sentiment-analysis-reddit-headlines-pythons-nltk/
 
 [Reinforcement Learning for Optimized Trade Execution](https://www.cis.upenn.edu/~mkearns/papers/rlexec.pdf)
 
-[PR-019: Continuous Control with Deep Reinforcement Learning](https://www.youtube.com/watch?v=h2WSVBAC1t4&list=PLlMkM4tgfjnJhhd4wn5aj8fVTYJwIpWkS&index=20&t=17s)
+
+
+
 
 6. etc
+
+[PR-019: Continuous Control with Deep Reinforcement Learning](https://www.youtube.com/watch?v=h2WSVBAC1t4&list=PLlMkM4tgfjnJhhd4wn5aj8fVTYJwIpWkS&index=20&t=17s)
+
+
 [Quant Platform](https://www.quantopian.com/)
 
 [프로그래머를 위한 통계 강의( 파이콘 2016, 미국 )](https://www.youtube.com/watch?v=CRnnarKkm9Y)
