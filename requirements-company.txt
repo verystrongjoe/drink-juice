@@ -23,7 +23,7 @@ pandas==0.21.0
 parso==0.1.0
 pickleshare==0.7.4
 prompt-toolkit==1.0.15
-protobuf==3.4.0
+protobuf==3.18.3
 psycopg2==2.7.3.2
 Pygments==2.2.0
 python-dateutil==2.6.1
